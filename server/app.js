@@ -9,7 +9,7 @@ require('./db/mongoose')
 
 const app = express()
 const path = require('path')
-publicDir = path.join(__dirname,'public')
+publicDir = path.join(__dirname, '../public')
 
 app.use(express.static(publicDir))
 

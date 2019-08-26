@@ -15,7 +15,8 @@
     "unit.js": "2.0.0"
   },
   "scripts": {
-    "start": "node ./server/app.js",
+    "start": "node ./server/index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon ./server/index.js",
     "test": "mocha --recursive tests --exit"
   }
 }
